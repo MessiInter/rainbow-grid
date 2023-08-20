@@ -1,12 +1,11 @@
-# CodeSandbox supports debian & ubuntu based images
-FROM ubuntu
+FROM node:latest
 
-# Example; install htop by default
-RUN apt update -y && apt install -y htop
+WORKDIR /workspace
 
-# The project will be mounted in /workspace by default
+RUN npm install -g pnpm@latest
 
-# Every new shell will open inside the built container
+ENV PNPM_HOME=/root/.pnpm
 
-# On top of this build, we install `zsh`, `git` and `docker` as additional
-# Docker layers.
+ENV PATH=/usr/local/bin:/workspace/node_modules/.bin:/root/.pnpm:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+
+ENV NODE_ENV=development
