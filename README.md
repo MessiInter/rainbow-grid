@@ -1,5 +1,5 @@
 # rainbow-grid
-A simple responsive rainbow grid animation using React and Anime.js.
+A simple responsive rainbow grid animation using [React](https://react.dev) and [Anime.js](https://animejs.com).
 
 ##
 
