@@ -48,7 +48,12 @@ function App() {
     <>
       <div id="grid">
         {[...Array(total)].map((...args) => (
-          <div key={(args[1] + 1).toString()} className="grid-item" id={args[1]} onClick={event => handleStagger(event)}></div>
+          <div
+            key={(args[1] + 1).toString()}
+            className="grid-item"
+            id={args[1]}
+            onClick={(event) => handleStagger(event)}
+          ></div>
         ))}
       </div>
     </>

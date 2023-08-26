@@ -17,7 +17,7 @@
         "port": 5173
       }
     },
-    
+
     "build": {
       "name": "build",
       "command": "pnpm build",
@@ -27,6 +27,24 @@
     "lint": {
       "name": "lint",
       "command": "pnpm lint",
+      "runAtStart": false
+    },
+
+    "lint:fix": {
+      "name": "lint:fix",
+      "command": "pnpm lint:fix",
+      "runAtStart": false
+    },
+
+    "format": {
+      "name": "format",
+      "command": "pnpm format",
+      "runAtStart": false
+    },
+
+    "format:check": {
+      "name": "format:check",
+      "command": "pnpm format:check",
       "runAtStart": false
     },
 

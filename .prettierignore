@@ -7,15 +7,28 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
 # Dependencies and Build outputs
 node_modules
 dist
 dist-ssr
 *.local
 
+# Config files
+!.eslintrc.*
+!.prettierrc*
+.prettierignore
+.gitignore
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+.codesandbox/*
+!.codesandbox/tasks.json
 .idea
 *.suo
 *.ntvs*

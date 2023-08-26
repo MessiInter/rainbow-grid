@@ -36,7 +36,6 @@
   display: block;
 }
 
-
 @media (hover: hover) and (pointer: fine) {
   :root body #root #grid .grid-item:hover {
     opacity: 0.8;
