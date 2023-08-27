@@ -28,8 +28,6 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.codesandbox/*
-!.codesandbox/tasks.json
 .idea
 *.suo
 *.ntvs*
