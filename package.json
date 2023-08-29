@@ -22,7 +22,7 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.47.0",
+    "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
@@ -40,6 +40,6 @@
   "bugs": {
     "url": "https://github.com/MessiInter/rainbow-grid/issues"
   },
-  "author": "MessiInter",
+  "author": "messiinter",
   "license": "MIT"
 }
