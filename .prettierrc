@@ -1,7 +1,48 @@
 {
-  "semi": true,
-  "tabWidth": 2,
   "printWidth": 100,
+  "tabWidth": 2,
+  "semi": true,
   "singleQuote": true,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "bracketSameLine": true,
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "printWidth": 100,
+        "tabWidth": 2,
+        "semi": true,
+        "singleQuote": false,
+        "trailingComma": "none",
+        "bracketSameLine": true,
+        "arrowParens": "avoid"
+      },
+      "parser": "html"
+    },
+
+    {
+      "files": "*.css",
+      "options": {
+        "printWidth": 100,
+        "tabWidth": 2,
+        "semi": true,
+        "singleQuote": true,
+        "bracketSameLine": false
+      },
+      "parser": "css"
+    },
+
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 100,
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": false,
+        "bracketSameLine": false
+      },
+      "parser": "json"
+    }
+  ]
 }

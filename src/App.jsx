@@ -9,6 +9,7 @@ function App() {
   const [rows, setRows] = useState(0);
   const [total, setTotal] = useState(1);
   const [color, setColor] = useState('#ffffff');
+  const [toggled, setToggled] = useState(false);
 
   function handleStagger({ target: { id: element } }) {
     const randColor = randomColor();
@@ -50,10 +51,12 @@ function App() {
         {[...Array(total)].map((...args) => (
           <div
             key={(args[1] + 1).toString()}
-            className="grid-item"
+            className={!toggled ? 'grid-item toggled' : 'grid-item disable-hover'}
             id={args[1]}
-            onClick={(event) => handleStagger(event)}
-          ></div>
+            onClick={event => {
+              !toggled && setToggled(!toggled);
+              handleStagger(event);
+            }}></div>
         ))}
       </div>
     </>
